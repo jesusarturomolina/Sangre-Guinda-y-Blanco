@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+ /*Color del fondo*/
+    background: #050505;
+ /*Color de las letras normales*/
+    color: beige;
+
+    background: background-color: #dee5db;
+ /*Tipo de estilo de fondo*/
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.3'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+ /*Tamaño de la letra*/
+    font-size: 16px;
+ /*Tipo de letra*/
+    font-family: 'Oswald', sans-serif;
+}
+
+/*Tipo de la letra dentro del html "a"*/
+a{
+    color: floralwhite;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none
+}
+
+/*Hacia a donde va a ir centrado */
+.container {
+    width: 90%;
+    margin: auto;
+}
+/*Creamos estilos de la navegacion*/
+.nav-main{
+    font-size:17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*Alineamos los objetos*/
+    height: 60px;
+    padding: 20px 0;
+}
+
+/*Cambiamos y movemos el icono*/
+.nav-brand{
+    width: 45px;
+}
+
+/* Navegacion izquierda */
+.nav-main ul {
+    display: flex;
+    padding: 15px;
+}
+
+.nav-main ul li{
+    padding: 20px;
+}
+ /* Navegacion con linea pegada a las letras*/
+.nav-main ul li a{
+    padding: 2px;
+}
+
+/* Bloque señalamiento de navegacion*/
+.nav-main ul li a:hover{
+    border-bottom: 2px solid #ffffff;
+
+}
+
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20;
+
+}
+
+/* Parte de NoticiaImportante*/
+    /*Vamos a darle formato a HR*/
+    hr{
+        margin: 20px 0;
+    }
+
+.NoticiaImportante{
+    width: 100%;
+    /*Se resalta la noticia con un color, en este caso en azul fuerte*/
+    /* background: rgb(36, 7, 90);*/
+    height: 550px;
+    /*Se pueden buscar imagenes gratuitas en: pexels.com*/
+    background: url('./Img/noticia_importante_1.jpg') no-repeat center center/cover ;
+    padding: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    /* El texto de la imagen va a ir centrado*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+/* Abrimos la clase btn*/
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;   
+    color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    margin: 10px 0;
+}
+
+/* Efecto del boton encendido y apagado*/
+.btn:hover{
+    opacity: .7;
+}
+
+.NoticiaImportante h2,
+.NoticiaImportante p{
+    margin-bottom: 10px;
+}
+
+/* news cards*/
+
+.news-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*o puede ser con esta sentencia*/
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    gap: 25px;
+    margin: 10px 0;
+}
+
+/*Reducimos las imagenes que tenemos*/
+.news-cards img{
+    width: 100%;
+    height: 180px;
+}
+
+/*Tamaño de letra cambia*/
+.news-cards h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.news-cards a{
+    padding: 10px 0;
+    color:#f2f2f2;
+    text-transform: uppercase;
+    /*El texto lo deja en una linea entera, sin partirse*/
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+.news-cards a:hover{
+    text-decoration: underline;
+}
